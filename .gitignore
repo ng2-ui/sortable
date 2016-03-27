@@ -1,3 +1,5 @@
 node_modules
 typings
 *.log
+*.d.ts
+*.js
