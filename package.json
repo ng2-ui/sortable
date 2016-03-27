@@ -1,0 +1,41 @@
+{
+  "name": "ng2-package-seed",
+  "description": "An example of how to pakcage a Angular2 project into a bundle",
+  "scripts": {
+    "preversion": "npm test",
+    "version": "tsc && node scripts/make-bundles.js && git add -A dist",
+    "postversion": "git push && git push --tags && rm -rf build/temp",
+
+    "preinstall": "typings install",
+    "postinstall": "npm prune",
+
+    "test": "echo test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsvalley/ng2-package-seed.git"
+  },
+  "keywords": ["angular2", "package", "bundler"],
+  "author": "Allen Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsvalley/ng2-package-seed/issues"
+  },
+  "main": "ng2-translate.js",
+  "typings": "./ng2-translate.d.ts",
+  "homepage": "https://github.com/ocombe/ng2-translate",
+  "dependencies": {
+    "angular2": "2.0.0-beta.12",
+    "es6-promise": ">= 3.0.2",
+    "es6-shim": ">= 0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "~0.19.24",
+    "zone.js": "^0.6.4"
+  },
+  "devDependencies": {
+    "systemjs-builder": "^0.15.13",
+    "typescript": "^1.8.9",
+    "typings": "^0.6.8"
+  }
+}
