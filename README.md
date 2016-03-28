@@ -18,15 +18,19 @@
   * typings: created by `typings install`
   * build: creatred by `npm run prepubish`
 
-## Usage
+## How To Use
 
-1. Copy ng2-package-seed into your project
-
-        git remote add seed https://github.com/jsvalley/ng2-package-seed.git 
-        git fetch seed
-        git checkout seed/master
-
-2. Install node modules and typings
+1. Install node modules and typings
 
         npm install
+
+2. Modify the following directory and files to build your own package
+ 
+   * `src` directory
+   * new package main file copied from `ng2-package-seed.ts`
+
+3. Build your package
+
+  * `node make.js`
+
 

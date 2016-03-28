@@ -27,6 +27,8 @@ var config = {
 builder.config(config);
 
 builder.bundle(
-  'ng2-package-seed', 
-  'dist/ng2-package-seed.js', {minify: true, sourceMaps: true}
+  name, 
+  'dist/' + name + '.js', {
+    minify: true, sourceMaps: true
+  }
 );
