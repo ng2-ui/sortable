@@ -1,6 +1,5 @@
 node_modules
 typings
-bundles
 *.log
 *.d.ts
 *.js

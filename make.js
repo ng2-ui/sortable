@@ -12,16 +12,16 @@ var config = {
   },
   map: {
     typescript: './node_modules/typescript/lib/typescript.js',
-    angular2: path.resolve('node_modules/angular2'),
-    rxjs: path.resolve('node_modules/rxjs')
+    angular2: 'node_modules/angular2',
+    rxjs: 'node_modules/rxjs'
   },
   paths: {
     '*': '*.ts'
   },
   meta: {
-    'node_modules/angular2/*': { build: false },
-    'node_modules/rxjs/*': { build: false }
-  },
+    'angular2/*': { build: false },
+    'rxjs/*': { build: false }
+  }
 };
 
 builder.config(config);
@@ -31,4 +31,11 @@ builder.bundle(
   'bundles/' + name + '.js', {
     //minify: true, sourceMaps: true
   }
-);
+)
+.then(function(output) {
+  console.log('Build complete');
+})
+.catch(function(err) {
+  console.log('Build error');
+  console.log(err);
+});
