@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.angularjs.org/2.0.0-beta.11/angular2-polyfills.js"></script>
+  <script src="https://code.angularjs.org/tools/system.js"></script>
+  <script src="https://code.angularjs.org/tools/typescript.js"></script>
+  <script>
+    System.config({
+      transpiler: 'typescript', //use typescript for compilation
+      typescriptOptions: {
+        emitDecoratorMetadata: true
+      },
+      map: {  //map tells the System loader where to look for things
+        app: "./test-files"
+      },
+      paths: {
+        "main": "/main",
+        "angular2/*": "/angular2/*",
+        "rxjs/*": "/rxjs/*"
+      },
+      packages: { //packages defines our app package
+        "ng2-package-seed": {
+          defaultExtension: "js"
+        },
+        app: {
+          main: './main.ts',
+          defaultExtension: 'ts'
+        }
+      }
+    });
+  </script>
+  <script src="https://code.angularjs.org/2.0.0-beta.13/Rx.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.13/angular2.dev.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.13/http.dev.js"></script> 
+  <script src="bundles/ng2-package-seed.js"></script>
+  <script>
+    System.import('app').catch(console.error.bind(console));
+  </script>
+</head>
+
+<body>
+  <my-app>Loading....</my-app>
+</body>
+
+</html>

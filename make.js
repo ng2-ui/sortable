@@ -28,7 +28,7 @@ builder.config(config);
 
 builder.bundle(
   name, 
-  'dist/' + name + '.js', {
-    minify: true, sourceMaps: true
+  'bundles/' + name + '.js', {
+    //minify: true, sourceMaps: true
   }
 );
