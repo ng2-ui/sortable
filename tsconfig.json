@@ -1,18 +1,21 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
-    "module": "commonjs",
+    "declaration": true,
     "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "declaration": true,
-    "moduleResolution": "node"
+    "removeComments": false,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "suppressImplicitAnyIndexErrors": true
   },
   "exclude": [
     "node_modules",
-    "typings/browser",
-    "typings/browser.d.ts"
+    "typings/main",
+    "typings/main.d.ts"
   ]
 }
+

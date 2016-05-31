@@ -1,36 +1,13 @@
-# An example of how to pakcage a Angular2 project into a bundle
+# Ng2 Node Module Example
 
+You can publish angular2 package as a node module without minifying or concatenating by using the benefit of dynamically loading it using systemjs.
 
-## Files
+## Usage
 
-  * .gitignore: files that won't be git-managed
-  * .npmignore: files that won't be published
-  * README.md: this file
-  * dist: systemjs bundle files, .js and .min.js files
-  * ng-package-seed.ts: package main file
-  * package.json: package definition including npm script definitions
-  * scripts: script files used by `npm`
-  * src: typescript, source codes; .ts files
-  * tsconfig.json: typescript compiler, tsc, configuration
-  * typings.json: type definnitions
+`$ tsc`
 
-  * node_modules: created by `npm install`
-  * typings: created by `typings install`
-  * build: creatred by `npm run prepubish`
+This will create two important files as well as compiling all `.ts` files into `.js` files
 
-## How To Use
-
-1. Install node modules and typings
-
-        npm install
-
-2. Modify the following directory and files to build your own package
- 
-   * `src` directory
-   * new package main file copied from `ng2-package-seed.ts`
-
-3. Build your package
-
-  * `node make.js`
-
+ * dist/index.d.ts
+ * dist/index.js
 
