@@ -1,4 +1,4 @@
-# Ng2 Node Module Example
+# Ng2 Node Module Publish Example
 
 You can publish angular2 package as a node module without minifying or concatenating by using the benefit of dynamically loading it using systemjs.
 
