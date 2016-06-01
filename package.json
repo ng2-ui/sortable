@@ -1,6 +1,6 @@
 {
   "name": "ng2-publish-seed",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Angular2 npm package publish project example",
   "license": "MIT",
   "main": "dist/index.js",
