@@ -1,12 +1,10 @@
 {
   "name": "ng2-publish-seed",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Angular2 npm package publish project example",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "prepublish": "build"
   },
   "typescript": {
     "definition": "dist/index.d.ts"
