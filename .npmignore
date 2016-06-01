@@ -1,8 +1,0 @@
-node_modules
-typings
-*.d.ts
-*.log
-*.tgz
-
-!index.d.ts
-!index.ref.d.ts
