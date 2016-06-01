@@ -9,7 +9,7 @@
     "prepublish": "build"
   },
   "typescript": {
-    "definition": "index.d.ts"
+    "definition": "dist/index.d.ts"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.1",
