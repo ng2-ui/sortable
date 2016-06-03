@@ -1,13 +1,23 @@
-# Ng2 Node Module Publish Example
+# ng2-publish-seed
 
-You can publish angular2 package as a node module without minifying or concatenating by using the benefit of dynamically loading it using systemjs.
+Angular2 Node Module Package Development/Publish Example
 
-## Usage
+There is an article in jsvally website about
+[How To Publish Angular2 TypeScript Module](http://jsvalley.github.io/how-to-publish-ng2-module-with-typescript-ready)]
 
-`$ tsc`
+## To run it on your local environment
 
-This will create two important files as well as compiling all `.ts` files into `.js` files
+Run the following command to compile the source to `dist` directory
 
- * dist/index.d.ts
- * dist/index.js
+    $ npm install
+    $ typings install
+    $ rm -rf dist
+    $ tsc
 
+Run the following command to run a static web server
+
+    $ cd test
+    $ python -mSimpleHTTPServer
+    $ "then visit http://localhost:9000
+
+LICENSE: MIT

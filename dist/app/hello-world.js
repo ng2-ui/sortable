@@ -2,8 +2,8 @@
 var HelloWorld = (function () {
     function HelloWorld() {
     }
-    HelloWorld.prototype.helloWorld = function () {
-        console.log('Hello World');
+    HelloWorld.prototype.toString = function () {
+        return "Hello World";
     };
     return HelloWorld;
 }());
