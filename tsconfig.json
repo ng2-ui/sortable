@@ -13,11 +13,11 @@
     "suppressImplicitAnyIndexErrors": true
   },
   "exclude": [
-    "node_modules",
-    "typings/main",
     "typings/main.d.ts",
-    "index.d.ts",
-    "test"
+    "typings/main",
+    "node_modules",
+    "test",
+    "src",
+    "index.d.ts"
   ]
 }
-
