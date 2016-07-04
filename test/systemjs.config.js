@@ -1,8 +1,8 @@
 (function(global) {
   var map = {
     app: "./app",
-    '@angular': 'node_modules/@angular',
-    'rxjs': 'node_modules/rxjs'
+    '@angular': '../node_modules/@angular',
+    'rxjs': '../node_modules/rxjs'
   };
   var packages = {
     app: { main: './main.ts', defaultExtension: 'ts' },
@@ -14,8 +14,10 @@
     rxjs: { defaultExtension: 'js' }
   };
   
-  map['my-npm'] = 'src';
+  map['my-npm'] = '../src';
   packages['my-npm'] = {main: 'index.ts', defaultExtension: 'ts'};
+  map['my-npm'] = '../dist';
+  packages['my-npm'] = {main: 'index.js', defaultExtension: 'js'};
   System.config({
     transpiler: 'typescript', //use typescript for compilation
     typescriptOptions: {      //typescript compiler options

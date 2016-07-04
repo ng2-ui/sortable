@@ -1,3 +1,3 @@
 export class HelloWorld {
-  world: string = "World";
+  world: string = "Angular2 Npm Package";
 }

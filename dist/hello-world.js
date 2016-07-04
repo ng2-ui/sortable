@@ -1,7 +1,7 @@
 "use strict";
 var HelloWorld = (function () {
     function HelloWorld() {
-        this.world = "World";
+        this.world = "Angular2 Npm Package";
     }
     return HelloWorld;
 }());
