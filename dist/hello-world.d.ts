@@ -1,3 +1,3 @@
 export declare class HelloWorld {
-    toString(): string;
+    world: string;
 }

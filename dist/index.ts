@@ -1,1 +1,1 @@
-export {HelloWorld} from './app/hello-world';
+export { HelloWorld } from './hello-world';

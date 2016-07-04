@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import { HelloWorld } from "../dist";
-//import { HelloWorld } from "ng2-publish-seed";
+import {Component} from '@angular/core'
+import { HelloWorld } from 'my-npm';
 
 @Component({
   selector: 'my-app',
-  providers: [HelloWorld],
-  template: `Here we say "{{helloWorld}}"`
+  template: `Hello {{world}}`,
+  providers: [HelloWorld]
 })
 export class AppComponent {
-  constructor(public helloWorld: HelloWorld) {
+  constructor(helloWorld: HelloWorld) {
+    this.world = helloWorld.world;
   }
-  
 }

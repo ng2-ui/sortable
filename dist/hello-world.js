@@ -1,10 +1,8 @@
 "use strict";
 var HelloWorld = (function () {
     function HelloWorld() {
+        this.world = "World";
     }
-    HelloWorld.prototype.toString = function () {
-        return "Hello World";
-    };
     return HelloWorld;
 }());
 exports.HelloWorld = HelloWorld;
