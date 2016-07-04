@@ -16,9 +16,8 @@ npm install --save \
 
 npm install --save-dev \
   typescript \
+  rimraf \
   typings \
   ng2-inline-template
-
-npm install ng2-inline-template -g
 
 typings install
