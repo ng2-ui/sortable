@@ -1,6 +1,6 @@
 # ng2-ui-sortable
 
-Re-arrangable list element
+Mobile-friendly re-arrangable list element
 
 <a href="https://ng2-ui.github.io/#/ng2-sortable">
   DEMO
