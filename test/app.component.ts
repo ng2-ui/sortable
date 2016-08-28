@@ -1,13 +1,35 @@
 import {Component} from '@angular/core'
-import { HelloWorld } from 'my-npm';
 
 @Component({
   selector: 'my-app',
-  template: `Hello {{world}}`,
-  providers: [HelloWorld]
+  template: `
+    <ul ng2-sortable>
+      <li id="order">Order</li>
+      <li id="me">Me</li>
+      <li id="right">Right</li>
+      <li id="the">The</li>
+      <li id="into">Into</li>
+      <li id="put">Put</li>
+    </ul>`,
+  styles: [`
+    ul[ng2-sortable] {
+       padding: 10px; 
+       border: 1px solid #ccc;
+      list-style: none; 
+      display: block
+    }
+    ul[ng2-sortable] li {
+      padding: 10px 5px;
+      background: #4986e7;
+      color: #fff; 
+      border: 1px solid #fff;
+      display: block; 
+      position: relative
+    }
+    ul[ng2-sortable] li.drag-enter {
+      border-top: 2px solid yellow;
+    }
+ `]
 })
 export class AppComponent {
-  constructor(helloWorld: HelloWorld) {
-    this.world = helloWorld.world;
-  }
 }

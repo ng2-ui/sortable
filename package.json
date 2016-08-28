@@ -1,29 +1,32 @@
 {
-  "name": "ng2-publish-seed",
-  "version": "0.3.0",
-  "description": "Angular2 Npm Package Example",
+  "name": "ng2-ui-sortable",
+  "version": "0.1.0",
+  "description": "Re-arrangable list element",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "build": "./build.sh"
+    "build": "./build.sh",
+    "start": "http-server -o -p 9014"
   },
   "dependencies": {
-    "@angular/common": "2.0.0-rc.3",
-    "@angular/compiler": "2.0.0-rc.3",
-    "@angular/http": "2.0.0-rc.3",
-    "@angular/core": "2.0.0-rc.3",
-    "@angular/forms": "0.1.1",
-    "@angular/platform-browser": "2.0.0-rc.3",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.3",
-    "@angular/router": "3.0.0-alpha.7",
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/forms": "0.3.0",
+    "@angular/http": "2.0.0-rc.5",
+    "@angular/platform-browser": "2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.5",
+    "@angular/router": "3.0.0-rc.1",
     "@angular/router-deprecated": "2.0.0-rc.2",
-    "@angular/upgrade": "2.0.0-rc.3",
-    "systemjs": "0.19.27",
+    "@angular/upgrade": "2.0.0-rc.5",
+    "angular2-in-memory-web-api": "0.0.15",
+    "bootstrap": "^3.3.6",
     "core-js": "^2.4.0",
+    "hammerjs": "^2.0.8",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.6",
-    "zone.js": "^0.6.12",
-    "bootstrap": "^3.3.6"
+    "systemjs": "0.19.27",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
     "ng2-inline-template": "^0.1.1",
@@ -32,11 +35,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsvalley/ng2-publish-seed.git"
+    "url": "git+https://github.com/jsvalley/ng2-ui-sortable.git"
   },
   "author": "Allen Kim <allenhwkim@gmail.com>",
   "bugs": {
-    "url": "https://github.com/jsvalley/ng2-publish-seed/issues"
+    "url": "https://github.com/jsvalley/ng2-ui-sortable/issues"
   },
-  "homepage": "https://github.com/jsvalley/ng2-publish-seed#readme"
+  "homepage": "https://github.com/jsvalley/ng2-ui-sortable#readme"
 }
