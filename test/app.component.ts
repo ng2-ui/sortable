@@ -24,7 +24,8 @@ import {Component} from '@angular/core'
       color: #fff; 
       border: 1px solid #fff;
       display: block; 
-      position: relative
+      position: relative;
+      cursor: pointer;
     }
     ul[ng2-sortable] li.drag-enter {
       border-top: 2px solid yellow;

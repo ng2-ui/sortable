@@ -35,11 +35,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsvalley/ng2-ui-sortable.git"
+    "url": "git+https://github.com/ng2-ui/ng2-ui-sortable.git"
   },
   "author": "Allen Kim <allenhwkim@gmail.com>",
   "bugs": {
-    "url": "https://github.com/jsvalley/ng2-ui-sortable/issues"
+    "url": "https://github.com/ng2-ui/ng2-ui-sortable/issues"
   },
-  "homepage": "https://github.com/jsvalley/ng2-ui-sortable#readme"
+  "homepage": "https://github.com/ng2-ui/ng2-ui-sortable#readme"
 }
