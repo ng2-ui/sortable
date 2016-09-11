@@ -18,8 +18,8 @@
 
   map['ng2-ui-sortable'] = '../dist';
   packages['ng2-ui-sortable'] = {main: 'index.js', defaultExtension: 'js'};
-  map['ng2-ui-sortable'] = '../src';
-  packages['ng2-ui-sortable'] = {main: 'index.ts', defaultExtension: 'ts'};
+  // map['ng2-ui-sortable'] = '../src';
+  // packages['ng2-ui-sortable'] = {main: 'index.ts', defaultExtension: 'ts'};
 
   System.config({
     transpiler: 'typescript', //use typescript for compilation

@@ -16,7 +16,7 @@ Mobile-friendly re-arrangable list element
 2. add `map` and `packages` to your `systemjs.config.js`
 
         map['ng2-ui-sortable'] = 'node_modules/ng2-ui-sortable/dist';
-        packages['ng2-ui-sortable'] = { main: 'index.js', defaultExtension: 'js'];
+        packages['ng2-ui-sortable'] = { main: 'ng2-ui-sortable.umd.js', defaultExtension: 'js'];
 
 3. import Ng2SortableModule to your AppModule
 
