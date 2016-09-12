@@ -1,3 +1,4 @@
+///<reference path="../node_modules/@types/hammerjs/index.d.ts"/>
 import {Component, ElementRef, ViewChild, Directive, ViewContainerRef, Output, EventEmitter} from '@angular/core'
 
 @Directive({

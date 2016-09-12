@@ -117,6 +117,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+	///<reference path="../node_modules/@types/hammerjs/index.d.ts"/>
 	var core_1 = __webpack_require__(1);
 	var Ng2SortableDirective = (function () {
 	    function Ng2SortableDirective(viewContainerRef) {
