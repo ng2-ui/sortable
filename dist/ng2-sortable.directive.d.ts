@@ -1,4 +1,3 @@
-/// <reference path="../node_modules/@types/hammerjs/index.d.ts" />
 import { ViewContainerRef, EventEmitter } from '@angular/core';
 export declare class Ng2SortableDirective {
     viewContainerRef: ViewContainerRef;
