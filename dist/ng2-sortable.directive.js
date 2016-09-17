@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Hammer = require('hammerjs');
 var Ng2SortableDirective = (function () {
     function Ng2SortableDirective(viewContainerRef) {
         var _this = this;
