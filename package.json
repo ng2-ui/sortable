@@ -1,10 +1,11 @@
 {
   "name": "ng2-ui-sortable",
-  "version": "0.2.3",
+  "version": "0.2.2",
   "description": "Re-arrangable list element",
   "license": "MIT",
   "main": "dist/ng2-ui-sortable.umd.js",
   "typings": "dist/index.d.ts",
+  "typings": "dist/index.js",
   "scripts": {
     "start": "http-server -o",
     "clean": "rimraf dist",
