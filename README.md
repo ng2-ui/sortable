@@ -2,7 +2,7 @@
 
 Mobile-friendly re-arrangable list element
 
-<a href="https://ng2-ui.github.io/#/ng2-sortable">
+<a href="https://rawgit.com/ng2-ui/ng2-ui-sortable/master/app/index.html">
   DEMO
   <!-- img src="http://i.imgur.com/0qcxg8X.png" width="50% border="1" / -->
 </a>

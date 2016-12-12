@@ -38,6 +38,7 @@ export class Ng2SortableDirective {
   dragStartHandler = event => {
     //console.log('dragStartHandler');
     this.draggingEl = event.target;
+    //noinspection TypeScriptUnresolvedFunction
     Object.assign(this.draggingEl.style, {
       zIndex: 3,
       pointerEvents: 'none'
@@ -46,6 +47,7 @@ export class Ng2SortableDirective {
 
   dragHandler = event =>  {
     //console.log('dragHandler');
+    //noinspection TypeScriptUnresolvedFunction
     Object.assign(this.draggingEl.style, {
       transform: 'translate(0px,' + event.deltaY + 'px)'
     });
@@ -64,6 +66,7 @@ export class Ng2SortableDirective {
 
   dragEndHandler = event => {
     //console.log('dragEndHandler');
+    //noinspection TypeScriptUnresolvedFunction
     Object.assign(this.draggingEl.style, {
       transform: 'translate(0,0)',
       zIndex: 1,
