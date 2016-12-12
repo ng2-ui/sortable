@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var Ng2SortableDirective = (function () {
     function Ng2SortableDirective(viewContainerRef) {
         var _this = this;
@@ -17,6 +17,7 @@ var Ng2SortableDirective = (function () {
         this.dragStartHandler = function (event) {
             //console.log('dragStartHandler');
             _this.draggingEl = event.target;
+            //noinspection TypeScriptUnresolvedFunction
             Object.assign(_this.draggingEl.style, {
                 zIndex: 3,
                 pointerEvents: 'none'
@@ -24,6 +25,7 @@ var Ng2SortableDirective = (function () {
         };
         this.dragHandler = function (event) {
             //console.log('dragHandler');
+            //noinspection TypeScriptUnresolvedFunction
             Object.assign(_this.draggingEl.style, {
                 transform: 'translate(0px,' + event.deltaY + 'px)'
             });
@@ -40,6 +42,7 @@ var Ng2SortableDirective = (function () {
         };
         this.dragEndHandler = function (event) {
             //console.log('dragEndHandler');
+            //noinspection TypeScriptUnresolvedFunction
             Object.assign(_this.draggingEl.style, {
                 transform: 'translate(0,0)',
                 zIndex: 1,
@@ -74,18 +77,17 @@ var Ng2SortableDirective = (function () {
         var orders = Array.prototype.slice.call(liEls).map(function (el) { return el.id; });
         this.orderChanged.emit(orders);
     };
-    __decorate([
-        // order of LI ids
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], Ng2SortableDirective.prototype, "orderChanged", void 0);
-    Ng2SortableDirective = __decorate([
-        core_1.Directive({
-            selector: '[ng2-sortable]'
-        }), 
-        __metadata('design:paramtypes', [core_1.ViewContainerRef])
-    ], Ng2SortableDirective);
     return Ng2SortableDirective;
 }());
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], Ng2SortableDirective.prototype, "orderChanged", void 0);
+Ng2SortableDirective = __decorate([
+    core_1.Directive({
+        selector: '[ng2-sortable]'
+    }),
+    __metadata("design:paramtypes", [core_1.ViewContainerRef])
+], Ng2SortableDirective);
 exports.Ng2SortableDirective = Ng2SortableDirective;
 //# sourceMappingURL=ng2-sortable.directive.js.map
