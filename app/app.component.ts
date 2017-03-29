@@ -3,7 +3,7 @@ import {Component} from '@angular/core'
 @Component({
   selector: 'my-app',
   template: `
-    <ul ng2-sortable>
+    <ul ngui-sortable>
       <li id="order">Order</li>
       <li id="me">Me</li>
       <li id="right">Right</li>
@@ -12,13 +12,13 @@ import {Component} from '@angular/core'
       <li id="put">Put</li>
     </ul>`,
   styles: [`
-    ul[ng2-sortable] {
+    ul[ngui-sortable] {
        padding: 10px; 
        border: 1px solid #ccc;
       list-style: none; 
       display: block
     }
-    ul[ng2-sortable] li {
+    ul[ngui-sortable] li {
       padding: 10px 5px;
       background: #4986e7;
       color: #fff; 
@@ -27,7 +27,7 @@ import {Component} from '@angular/core'
       position: relative;
       cursor: pointer;
     }
-    ul[ng2-sortable] li.drag-enter {
+    ul[ngui-sortable] li.drag-enter {
       border-top: 2px solid yellow;
     }
  `]

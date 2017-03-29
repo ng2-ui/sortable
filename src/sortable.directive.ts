@@ -1,9 +1,9 @@
 import {Component, ElementRef, ViewChild, Directive, ViewContainerRef, Output, EventEmitter} from '@angular/core'
 
 @Directive({
-  selector: '[ng2-sortable]'
+  selector: '[ngui-sortable]'
 })
-export class Ng2SortableDirective {
+export class NguiSortableDirective {
 
   ulEl: HTMLElement;     // <ul>
   liEls: NodeListOf<Element>;     // <li> <li>
@@ -73,7 +73,7 @@ export class Ng2SortableDirective {
       pointerEvents: 'inherit'
     });
     // remove class and drop the element
-    if (this.elDragEnter) {
+    if (this.elDragEnter && this.elDragEnter.parentNode) {
       this.elDragEnter.className = this.elDragEnter.className.replace(/\ drag-enter/g, '');
       this.elDragEnter.parentNode.insertBefore(this.draggingEl, this.elDragEnter);
       this.emitOrderChanged();

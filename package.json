@@ -1,9 +1,9 @@
 {
-  "name": "ng2-ui-sortable",
-  "version": "0.3.0",
+  "name": "@ngui/sortable",
+  "version": "0.4.0",
   "description": "Re-arrangable list element",
   "license": "MIT",
-  "main": "dist/ng2-ui-sortable.umd.js",
+  "main": "dist/sortable.umd.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "start": "NODE_ENV=dev webpack-dev-server --quiet --port 9001 --content-base app --config app/webpack.config --open",
@@ -47,11 +47,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ng2-ui/ng2-ui-sortable.git"
+    "url": "git+https://github.com/ng2-ui/sortable.git"
   },
   "author": "Allen Kim <allenhwkim@gmail.com>",
   "bugs": {
-    "url": "https://github.com/ng2-ui/ng2-ui-sortable/issues"
+    "url": "https://github.com/ng2-ui/sortable/issues"
   },
-  "homepage": "https://github.com/ng2-ui/ng2-ui-sortable#readme"
+  "homepage": "https://github.com/ng2-ui/sortable#readme"
 }

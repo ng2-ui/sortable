@@ -24,7 +24,7 @@
     "outDir": "dist",
     "baseUrl": "src",
     "paths": {
-      "ng2-ui-sortable": ["./index"]
+      "@ngui/sortable": ["./index"]
     }
   },
   "files": [

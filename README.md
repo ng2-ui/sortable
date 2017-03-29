@@ -1,33 +1,32 @@
-# ng2-ui-sortable
+# sortable
 
 Mobile-friendly re-arrangable list element
 
-<a href="https://rawgit.com/ng2-ui/ng2-ui-sortable/master/app/index.html">
+<a href="https://rawgit.com/ng2-ui/sortable/master/app/index.html">
   DEMO
   <!-- img src="http://i.imgur.com/0qcxg8X.png" width="50% border="1" / -->
 </a>
 
 ## Install
 
-1. install ng2-ui-sortable node module
+1. install @ngui/sortable node module
 
-        $ npm install ng2-ui-sortable --save
+        $ npm install @ngui/sortable --save
 
 2. add `map` and `packages` to your `systemjs.config.js`
 
-        map['ng2-ui-sortable'] = 'node_modules/ng2-ui-sortable/dist';
-        packages['ng2-ui-sortable'] = { main: 'ng2-ui-sortable.umd.js', defaultExtension: 'js'];
+        map['@ngui/sortable'] = 'node_modules/sortable/dist/sortable.umd.js';
 
-3. import Ng2SortableModule to your AppModule
+3. import NguiSortableModule to your AppModule
 
         import { NgModule } from '@angular/core';
         import { FormsModule } from "@angular/forms";
         import { BrowserModule  } from '@angular/platform-browser';
         import { AppComponent } from './app.component';
-        import { Ng2SortableModule } from 'ng2-ui-sortable';
+        import { NguiSortableModule } from '@ngui/sortable';
         
         @NgModule({
-          imports: [BrowserModule, FormsModule, Ng2SortableModule],
+          imports: [BrowserModule, FormsModule, NguiSortableModule],
           declarations: [AppComponent],
           bootstrap: [ AppComponent ]
         })
@@ -49,7 +48,7 @@ add `hammer.js` in your html
 You are ready. use it in your template
 
 
-    <ul ng2-sortable>
+    <ul ngui-sortable>
       <li id="order">Order</li>
       <li id="me">Me</li>
       <li id="right">Right</li>
@@ -60,13 +59,13 @@ You are ready. use it in your template
 
 ## Without css, it still works, but for better styling, please use some css. e.g.;
 
-    ul[ng2-sortable] {
+    ul[ngui-sortable] {
        padding: 10px; 
        border: 1px solid #ccc;
       list-style: none; 
       display: block
     }
-    ul[ng2-sortable] li {
+    ul[ngui-sortable] li {
       padding: 10px 5px;
       background: #4986e7;
       color: #fff; 
@@ -74,7 +73,7 @@ You are ready. use it in your template
       display: block; 
       position: relative
     }
-    ul[ng2-sortable] li.drag-enter {
+    ul[ngui-sortable] li.drag-enter {
       border-top: 2px solid yellow;
     }
 
