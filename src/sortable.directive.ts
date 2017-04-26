@@ -73,7 +73,7 @@ export class NguiSortableDirective {
       pointerEvents: 'inherit'
     });
     // remove class and drop the element
-    if (this.elDragEnter && this.elDragEnter.parentNode) {
+    if (this.elDragEnter) {
       this.elDragEnter.className = this.elDragEnter.className.replace(/\ drag-enter/g, '');
       this.elDragEnter.parentNode.insertBefore(this.draggingEl, this.elDragEnter);
       this.emitOrderChanged();
