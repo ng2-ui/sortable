@@ -2,6 +2,10 @@
 
 Mobile-friendly re-arrangable list element
 
+## IMPORTANT: NOT-MAINTAINED
+Accepting volunteers and ready to transfer ownership.
+
+
 <a href="https://rawgit.com/ng2-ui/sortable/master/app/index.html">
   DEMO
   <!-- img src="http://i.imgur.com/0qcxg8X.png" width="50% border="1" / -->
